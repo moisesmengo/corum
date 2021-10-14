@@ -11,138 +11,107 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- header -->
     <header>
-      <div class="infos">
-        <a href="#home" class="logo"
-          ><img src="assets/img/logo-branco.png" class="img" alt="Corum"
-        /></a>
+      <div class="container">
+        <div class="infos">
+          <a href="#home" class="logo"
+            ><img src="assets/img/logo.png" class="img" alt="Corum"
+          /></a>
+        </div>
 
-        <a href="mailto:contato@corum.agr.br" class="email"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="none"
-            viewBox="0 0 36 36"
-          >
-            <path
-              fill="#fff"
-              d="M32.33 6a2 2 0 00-.41 0h-28a2 2 0 00-.53.08l14.45 14.39L32.33 6z"
-            />
-            <path
-              fill="#fff"
-              d="M33.81 7.39l-14.56 14.5a2 2 0 01-2.82 0L2 7.5a2 2 0 00-.07.5v20a2 2 0 002 2h28a2 2 0 002-2V8a1.997 1.997 0 00-.12-.61zM5.3 28H3.91v-1.43l7.27-7.21 1.41 1.41L5.3 28zm26.61 0h-1.4l-7.29-7.23 1.41-1.41 7.27 7.21.01 1.43z"
-            />
-          </svg>
-          contato@corum.agr.br</a
-        >
+        <nav class="menu">
+          <button class="btn_mobile">
+            <span class="hamburgger"></span>
+          </button>
+          <ul class="menu_mobile">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#produtos">PRODUTOS</a></li>
+            <li><a href="#conteudo">CONTEÚDO </a></li>
+            <li><a href="#contato">CONTATO </a></li>
+            <li class="redes">
+              <div class="sociais">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/CORUM-Biotecnologia-102028615585937"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="none"
+                    viewBox="0 0 30 30"
+                  >
+                    <path
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      d="M0 15.084C0 22.54 5.416 28.743 12.5 30V19.166H8.75V15h3.75v-3.334c0-3.75 2.416-5.832 5.834-5.832 1.082 0 2.25.166 3.332.332V10H19.75c-1.834 0-2.25.916-2.25 2.084V15h4l-.666 4.166H17.5V30C24.584 28.742 30 22.543 30 15.084 30 6.788 23.25 0 15 0S0 6.787 0 15.084z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/CORUM-Biotecnologia-102028615585937"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="none"
+                    viewBox="0 0 30 30"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M19.5 15a4.5 4.5 0 11-9 0c0-.256.028-.507.074-.75H9.001v5.996c0 .417.337.754.754.754h10.493a.755.755 0 00.753-.754V14.25h-1.574c.047.243.074.494.074.75zM15 18a3 3 0 100-6.002A3 3 0 0015 18zm3.6-6.15h1.8a.452.452 0 00.45-.45V9.602a.451.451 0 00-.45-.452h-1.8a.452.452 0 00-.45.452V11.4c0 .248.203.45.45.45zM15 .6a14.4 14.4 0 100 28.8A14.4 14.4 0 0015 .6zm7.5 20.234c0 .916-.75 1.666-1.666 1.666H9.167c-.916 0-1.666-.75-1.666-1.666V9.167c0-.917.75-1.667 1.666-1.667h11.667c.917 0 1.667.75 1.667 1.667v11.667z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/corum.biotecnologia/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="none"
+                    viewBox="0 0 30 30"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M15 .6C7.049.6.6 7.047.6 15S7.049 29.4 15 29.4c7.954 0 14.4-6.447 14.4-14.4S22.955.6 15 .6zM11.477 20.97H8.56v-9.384h2.916v9.384zM10 10.433c-.921 0-1.517-.653-1.517-1.46 0-.823.614-1.456 1.554-1.456.94 0 1.517.633 1.535 1.456 0 .807-.594 1.46-1.572 1.46zm12.126 10.536H19.21v-5.2c0-1.211-.423-2.033-1.478-2.033-.805 0-1.284.556-1.495 1.092-.078.19-.098.46-.098.729v5.41h-2.917v-6.39c0-1.171-.038-2.15-.077-2.994h2.534l.133 1.304h.059c.384-.612 1.324-1.515 2.898-1.515 1.918 0 3.357 1.285 3.357 4.048v5.549z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="menu">
-        <button class="btn_mobile">
-          <span class="hamburgger"></span>
-        </button>
-        <ul class="menu_mobile">
-          <li><a href="#">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#soy">Soy </a></li>
-          <li><a href="#corn">Corn </a></li>
-          <li><a href="#bean">Bean</a></li>
-          <li class="redes">
-            <div class="sociais">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/CORUM-Biotecnologia-102028615585937"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="none"
-                  viewBox="0 0 30 30"
-                >
-                  <path
-                    fill="#fff"
-                    fill-rule="evenodd"
-                    d="M0 15.084C0 22.54 5.416 28.743 12.5 30V19.166H8.75V15h3.75v-3.334c0-3.75 2.416-5.832 5.834-5.832 1.082 0 2.25.166 3.332.332V10H19.75c-1.834 0-2.25.916-2.25 2.084V15h4l-.666 4.166H17.5V30C24.584 28.742 30 22.543 30 15.084 30 6.788 23.25 0 15 0S0 6.787 0 15.084z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </a>
-
-              <a
-                target="_blank"
-                href="https://www.facebook.com/CORUM-Biotecnologia-102028615585937"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="none"
-                  viewBox="0 0 30 30"
-                >
-                  <path
-                    fill="#fff"
-                    d="M19.5 15a4.5 4.5 0 11-9 0c0-.256.028-.507.074-.75H9.001v5.996c0 .417.337.754.754.754h10.493a.755.755 0 00.753-.754V14.25h-1.574c.047.243.074.494.074.75zM15 18a3 3 0 100-6.002A3 3 0 0015 18zm3.6-6.15h1.8a.452.452 0 00.45-.45V9.602a.451.451 0 00-.45-.452h-1.8a.452.452 0 00-.45.452V11.4c0 .248.203.45.45.45zM15 .6a14.4 14.4 0 100 28.8A14.4 14.4 0 0015 .6zm7.5 20.234c0 .916-.75 1.666-1.666 1.666H9.167c-.916 0-1.666-.75-1.666-1.666V9.167c0-.917.75-1.667 1.666-1.667h11.667c.917 0 1.667.75 1.667 1.667v11.667z"
-                  />
-                </svg>
-              </a>
-
-              <a
-                target="_blank"
-                href="https://www.instagram.com/corum.biotecnologia/"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="none"
-                  viewBox="0 0 30 30"
-                >
-                  <path
-                    fill="#fff"
-                    d="M15 .6C7.049.6.6 7.047.6 15S7.049 29.4 15 29.4c7.954 0 14.4-6.447 14.4-14.4S22.955.6 15 .6zM11.477 20.97H8.56v-9.384h2.916v9.384zM10 10.433c-.921 0-1.517-.653-1.517-1.46 0-.823.614-1.456 1.554-1.456.94 0 1.517.633 1.535 1.456 0 .807-.594 1.46-1.572 1.46zm12.126 10.536H19.21v-5.2c0-1.211-.423-2.033-1.478-2.033-.805 0-1.284.556-1.495 1.092-.078.19-.098.46-.098.729v5.41h-2.917v-6.39c0-1.171-.038-2.15-.077-2.994h2.534l.133 1.304h.059c.384-.612 1.324-1.515 2.898-1.515 1.918 0 3.357 1.285 3.357 4.048v5.549z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <!-- home -->
     <section class="home" id="home">
-      <svg
-        class="ornamento"
-        width="309"
-        height="700"
-        fill="none"
-        viewBox="0 0 339 730"
-      >
-        <path
-          fill="#e8750a27"
-          fill-rule="evenodd"
-          d="M339 0H0v563c16.125-101.012 85.886-177 169.5-177S322.875 461.988 339 563V0zM0 563c.273 92.278 76.056 167 169.499 167 93.444 0 169.227-74.722 169.5-167H0z"
-          clip-rule="evenodd"
-        />
-      </svg>
+      <img src="assets/img/ornamento.png" alt="ornamento" class="ornamento" />
 
       <div class="container">
-        <h1 class="titulo"><strong>Biotecnologia</strong> para Lavouras</h1>
+        <h1 class="titulo">
+          SOLUÇÕES <strong>MICROBIOLÓGICAS</strong> PARA UMA
+          <strong>AGRICULTURA</strong> MAIS <strong>SUSTENTÁVEL</strong> E
+          <strong>LUCRATIVA</strong>
+        </h1>
 
-        <ul>
-          <li>Soja</li>
-          <li>Milho</li>
-          <li>Feijão</li>
-        </ul>
+        <h2>APRIMORAMENTO DE PRODUÇÃO EM LAVOURAS DE SOJA, MILHO E FEIJÃO</h2>
 
-        <h2>Aumente sua produção <strong>agora</strong></h2>
+        <a href="#contato" class="btn_">APRIMORAR MINHA PRODUÇÃO AGORA</a>
       </div>
     </section>
 
