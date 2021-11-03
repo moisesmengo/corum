@@ -2,7 +2,7 @@ import outsideClick from "./clickfora.js";
 
 export default function menuMobile() {
   const btn = document.querySelector(".btn_mobile");
-  const menu = document.querySelector(".menu_mobile");
+  const menu = document.querySelector(".nav_menu");
 
   btn.addEventListener("click", () => {
     btn.classList.toggle("ativo");
