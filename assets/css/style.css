@@ -332,7 +332,6 @@ footer {
   }
   .nav_menu.ativo {
     overflow: auto;
-    overflow-y: scroll !important;
     width: 200px;
     padding-right: 20px;
   }
@@ -349,7 +348,6 @@ footer {
     position: static;
     padding-top: 0;
     margin-left: 20px;
-    display: block !important;
   }
   [data-dropdown] {
     max-width: 100%;
