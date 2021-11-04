@@ -8,6 +8,8 @@
       name="description"
       content="SOLUÇÕES BIOTÉCNOLOGICAS PARA UMA AGRICULTURA MAIS SUSTENTÁVEL E LUCRATIVA."
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <meta
       name="keywords"
       content="biotecnologia, sustentabilidade, agroindústria, soluções sustentáveis, solo"
@@ -15,6 +17,26 @@
     <title>CORUM - BIOTECNOLOGIA</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
+
+    <style>
+      .bg svg {
+        animation: entrada 0.5s forwards;
+      }
+      .hero h1 {
+        animation: entrada 0.7s forwards;
+      }
+      .sub {
+        animation: entrada 1s forwards;
+      }
+      @keyframes entrada {
+        from {
+          transform: translate3d(-80px, 0, 0);
+        }
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- bg -->
@@ -245,7 +267,33 @@
         </button>
         <ul class="nav_menu">
           <li><a href="index.html" class="active">home</a></li>
-          <li><a href="index.html">PRODUTOS</a></li>
+          <li data-dropdown>
+            <a href="index.html">PRODUTOS</a>
+            <ul class="dropdownmenu">
+              <li>
+                <a href=""
+                  ><img src="assets/img/feijao.webp" alt="feijão" /><strong
+                    >corum</strong
+                  >feijão</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img src="assets/img/milho.webp" alt="milho" /><strong
+                    >corum</strong
+                  >milho</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img src="assets/img/soja.webp" alt="soja" /><strong
+                    >corum</strong
+                  >soja</a
+                >
+              </li>
+              <li><a href="" class="crie">CRIE UMA SOLUÇÃO PARA O VOCÊ</a></li>
+            </ul>
+          </li>
           <li><a href="index.html">CONTEÚDO</a></li>
           <li><a href="index.html">CONTATO</a></li>
           <li class="oculto">
@@ -311,24 +359,24 @@
       </div>
     </section>
     <!-- produtos -->
-    <section class="produtos">
+    <section class="produtos animate">
       <div class="container">
         <div class="itens_produtos">
-          <div class="item_produto">
+          <div class="item_produto" data-aos="flip-right">
             <img class="img" src="assets/img/feijao.webp" alt="corum" />
 
             <h2><strong>CORUM</strong>FEIJÃO</h2>
 
             <a href="" class="btn_item">Conhecer</a>
           </div>
-          <div class="item_produto">
+          <div class="item_produto" data-aos="flip-right">
             <img class="img" src="assets/img/milho.webp" alt="corum" />
 
             <h2><strong>CORUM</strong>MILHO</h2>
 
             <a href="" class="btn_item">Conhecer</a>
           </div>
-          <div class="item_produto">
+          <div class="item_produto" data-aos="flip-right">
             <img class="img" src="assets/img/soja.webp" alt="corum" />
 
             <h2><strong>CORUM</strong>SOJA</h2>
@@ -343,14 +391,14 @@
       </div>
     </section>
     <!-- beneficios -->
-    <section class="beneficios">
+    <section class="beneficios animate">
       <div class="container">
         <div class="beneficios_itens">
           <div class="beneficio_item">
             <h1 class="titulo">BENEFÍCIOS PARA AS PLANTAS</h1>
 
             <div class="detalhes_beneficios">
-              <div class="item">
+              <div class="item" data-aos="flip-left">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100"
@@ -372,7 +420,7 @@
                   minerais que promovem a melhoria da lavoura.
                 </p>
               </div>
-              <div class="item">
+              <div class="item" data-aos="flip-left">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="79"
@@ -391,7 +439,7 @@
                   nutrientes e vitaminas.
                 </p>
               </div>
-              <div class="item">
+              <div class="item" data-aos="flip-left">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100"
@@ -410,7 +458,7 @@
                   fungos.
                 </p>
               </div>
-              <div class="item">
+              <div class="item" data-aos="flip-left">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="101"
@@ -436,7 +484,7 @@
             <h1 class="titulo">BENEFÍCIOS PARA O PRODUTOR</h1>
 
             <div class="detalhes_beneficios">
-              <div class="item">
+              <div class="item" data-aos="flip-right">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="121"
@@ -459,7 +507,7 @@
                   solo.
                 </p>
               </div>
-              <div class="item">
+              <div class="item" data-aos="flip-right">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="129"
@@ -479,7 +527,7 @@
 
                 <p>Reduz 5% das perdas decorrentes da seca.</p>
               </div>
-              <div class="item">
+              <div class="item" data-aos="flip-right">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="121"
@@ -499,7 +547,7 @@
 
                 <p>Economiza 18% no uso de fertilizantes sintéticos.</p>
               </div>
-              <div class="item">
+              <div class="item" data-aos="flip-right">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="128"
@@ -568,5 +616,9 @@
     </a>
 
     <script src="assets/js/script.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
