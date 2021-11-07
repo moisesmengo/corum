@@ -1,0 +1,259 @@
+.produto {
+  background: #db4200;
+  min-height: 100vh;
+}
+.foto_produto {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.ele {
+  background: #4a0d0e;
+  border-radius: 10px;
+  padding: 15px;
+}
+.ele thead th {
+  text-align: left;
+  font-size: 16px;
+  font-family: bold;
+  color: #e23803;
+  padding-bottom: 11px;
+}
+.fist {
+  width: 60%;
+}
+.ele tbody tr td {
+  font-size: 14px !important;
+  background: #4a0d0e;
+  position: relative;
+  z-index: 1000;
+  padding-left: 5px;
+}
+.ele tbody tr td span {
+  position: relative;
+  z-index: 1000 !important;
+  background: #4a0d0e !important;
+  padding-right: 5px;
+}
+.ele tbody tr td span::after {
+  content: "";
+  width: 250px;
+  height: 2px;
+  background: #e23803;
+  display: block;
+  top: 50%;
+  z-index: -1 !important;
+  position: absolute !important;
+}
+.cultura {
+  margin-top: 28px;
+}
+.fist_ {
+  width: 80px;
+}
+.video {
+  width: 100%;
+  background: #000;
+  height: 300px;
+}
+
+.infos ul {
+  animation: entrada 1s forwards;
+  margin-top: 30px;
+}
+.infos ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.btns {
+  display: flex;
+  margin-top: 30px;
+  animation: entrada 1.3s forwards;
+}
+.btns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff3000;
+  height: 30px;
+  width: 140px;
+  border-radius: 15px;
+  font-family: bold;
+  background: #fff;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.btns a:last-child {
+  margin-left: 20px;
+}
+.btns a:hover {
+  filter: brightness(90%);
+}
+.foto_produto_ {
+  display: none;
+}
+
+/* modal */
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.487);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container.ativo {
+  display: flex;
+}
+.modal {
+  background: #4a0d0ee7;
+  padding: 40px;
+  position: relative;
+  min-width: 300px;
+  width: 50%;
+  max-width: 800px;
+  border-radius: 15px;
+}
+.modal svg {
+  margin: 0 auto 15px auto;
+  display: block;
+}
+.modal dt {
+  color: #e23803;
+  font-size: 18px;
+  font-family: bold;
+  margin-bottom: 5px;
+}
+.modal dd {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: modal 0.5s forwards;
+}
+
+@media (max-width: 1500px) {
+  .contato .container {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+  .foto_produto {
+    display: none !important;
+  }
+  .foto_produto_ {
+    display: block;
+  }
+
+  .infos > div:last-child {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .modal {
+    padding: 20px;
+  }
+  .modal svg {
+    width: 150px;
+    height: 55px;
+  }
+  .modal dt {
+    font-size: 16px;
+  }
+  .modal dd {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  .modal-container {
+    height: auto;
+    padding: 40px 0;
+  }
+  .modal {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .video {
+    grid-row: 1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .qg {
+    margin-top: 30px;
+  }
+  .ele tbody tr td span::after {
+    width: 400px;
+  }
+  .fist {
+    width: 70%;
+  }
+  .modal-container {
+    max-height: 100vh;
+    overflow: auto;
+  }
+  .modal {
+    max-width: 500px;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 500px) {
+  .modal {
+    max-width: 300px;
+    margin-top: 450px;
+  }
+  .video {
+    width: 100%;
+  }
+  .ele tbody tr td span::after {
+    display: none;
+  }
+  .ele thead th {
+    font-size: 14px;
+  }
+  .main_titulo {
+    font-size: 28px;
+  }
+  .infos > div:last-child {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .foto_produto_ {
+    grid-row: 1;
+    max-width: 300px;
+  }
+  .btns a {
+    width: 100px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .video {
+    height: 200px !important;
+  }
+}

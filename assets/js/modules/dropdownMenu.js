@@ -10,7 +10,6 @@ export default function initDropdown() {
   });
 
   function handleClick(event) {
-    event.preventDefault();
     this.classList.toggle("ativo");
     outsideClick(this, ["touchstart", "click"], () => {
       this.classList.remove("ativo");

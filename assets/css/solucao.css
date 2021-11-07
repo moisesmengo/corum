@@ -1,0 +1,120 @@
+.solucao h2 {
+  font-size: 20px;
+}
+.solucao {
+  position: relative;
+}
+.imgs_graficos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.solucao .container {
+  grid-template-columns: 1fr 500px;
+  align-items: flex-start;
+}
+.gaficos {
+  margin-top: 140px;
+}
+.bg {
+  background: #db4200;
+}
+.solucaoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background: #902707db;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.solucaoes .item_ > div {
+  display: flex;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 20px;
+}
+.solucaoes .item_ > div h3 {
+  font-size: 40px;
+  font-family: bold;
+}
+.solucaoes .item_ > div h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: bold;
+}
+.solucaoes .item_ > div p {
+  font-size: 14px;
+  line-height: 20px;
+  height: 100px;
+}
+.btn_ligth {
+  font-size: 20px !important;
+  height: 16px !important;
+  width: 100% !important;
+  max-width: 300px;
+}
+.btn_ligth:last-child {
+  max-width: 200px;
+}
+.gaficos h2 {
+  font-size: 24px;
+  margin-bottom: 35px;
+  font-family: bold;
+}
+.bg_contato svg {
+  position: absolute;
+  bottom: -75%;
+  opacity: 0.4;
+  right: -100px;
+}
+.drone {
+  position: absolute;
+  right: -250px;
+  bottom: -120px;
+}
+
+@media (max-width: 1500px) {
+  .solucao h2 {
+    font-size: 16px !important;
+  }
+  .solucaoes {
+    grid-template-columns: 1fr 1fr;
+  }
+  .solucao .item_:last-child {
+    grid-column: -1/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .drone {
+    width: 700px;
+    bottom: 150px;
+    right: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .drone {
+    right: -150px;
+  }
+}
+@media (max-width: 900px) {
+  .drone {
+    display: none;
+  }
+  .gaficos {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 769px) {
+  .solucaoes,
+  .solucao .item_:last-child {
+    grid-template-columns: 1fr;
+  }
+  .solucaoes .item_ > div p {
+    height: auto;
+  }
+  .main_titulo {
+    font-size: 22px;
+  }
+}
